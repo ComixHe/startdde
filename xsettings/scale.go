@@ -289,7 +289,7 @@ func (m *XSManager) emitSignalSetScaleFactor(done, emitSignal bool) {
 	if done {
 		signalName = "SetScaleFactorDone"
 	}
-	err := m.service.Emit(m, signalName)
+	err := m.service.Emit(m, signalName, getScaleFactor())
 	if err != nil {
 		logger.Warning(err)
 	}

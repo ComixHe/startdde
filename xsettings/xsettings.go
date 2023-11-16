@@ -61,7 +61,7 @@ type XSManager struct {
 
 	//nolint
 	signals *struct {
-		SetScaleFactorStarted, SetScaleFactorDone struct{}
+		SetScaleFactorStarted, SetScaleFactorDone float64
 	}
 }
 
